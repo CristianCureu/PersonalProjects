@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+body.active {
+  background-color: rgb(24, 24, 24);
+  transition: all 0.3s ease;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .container.active {
+  background-color: rgb(24, 24, 24);
+} */
+/* TOGGLE BUTTON */
+.slider {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 3rem;
+  height: 1.5rem;
+  background-color: rgb(70, 70, 70);
+  border-radius: 14px;
+  cursor: pointer;
+}
+.slider i {
+  transform: scale(1.5);
+}
+.fa-moon {
+  padding-right: 0.34rem;
+  color: rgba(212, 180, 0, 0.932);
+  z-index: 10;
+  transition: all 0.9s ease;
+}
+.fa-moon.active {
+  color: white;
+}
+.fa-sun {
+  padding-left: 0.35rem;
+  color: white;
+  z-index: 10;
+  transition: all 0.9s ease;
+}
+.fa-sun.nonactive {
+  color: rgba(230, 196, 0, 0.911);
+}
+.slider-button {
+  position: absolute;
+  right: 45%;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 100%;
+  background-color: rgb(236, 200, 0);
+  transition: transform 0.6s ease;
+  cursor: pointer;
+}
+.slider-button.active {
+  transform: translateX(1.4rem);
+}
+/* TOGGLE BUTTON */
+
+.generator {
+  text-align: center;
+  width: auto;
+  min-height: 40vh;
+}
+
+.title {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+.title.active {
+  color: rgb(231, 231, 231);
+}
+.powered {
+  position: relative;
+  bottom: 2rem;
+  left: 4.5rem;
+  font-size: 0.5rem;
+}
+.powered.active {
+  color: rgba(156, 156, 156, 0.658);
+}
+
+.form-generator {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 4rem;
+}
+.input {
+  margin: 1rem 1rem;
+  padding: 0.9rem;
+  font-size: 1rem;
+  background-color: rgb(231, 231, 231);
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+}
+.input:focus {
+  outline: none;
+}
+.input.active {
+  background-color: rgb(56, 56, 56);
+  color: rgb(226, 226, 226);
+}
+
+.gButton {
+  margin: 2rem 4.5rem;
+  padding: 0.5rem 0rem;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 0.15rem solid rgb(70, 70, 70);
+  background-color: white;
+  font-size: 0.9rem;
+  transition: all 0.4s;
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.gButton:hover {
+  background-color: rgb(70, 70, 70);
+  color: white;
+}
+.gButton.active {
+  color: rgba(255, 255, 255, 0.822);
+  background-color: rgb(14, 14, 14);
+  border: 0.15rem solid rgba(255, 255, 255, 0.87);
+}
+.gButton.active:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(14, 14, 14);
+}
+.resultH2 {
+  font-size: 0.9rem;
+}
+.resultH2.active {
+  color: white;
+}
+.newResult {
+  font-size: 3rem;
+  margin: 0.8rem;
+}
+
+.newResult.active {
+  transform: scale(1.7);
+  transition: all 0.3s ease-out;
+}
+.newResult.active2 {
+  color: white;
+}
+
+@media screen and (max-width: 540px) {
+  .generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&family=Saira:wght@200&display=swap");
+
+/* Global styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 3rem;
+}
+
+.img-logo-on {
+  width: 50rem;
+  position: relative;
+  left: 3.2rem;
+  pointer-events: none;
+}
+
+.img-logo-off {
+  width: 50rem;
+  position: relative;
+  left: 3.2rem;
+  display: none;
+  pointer-events: none;
+}
+.intrerupatorOn {
+  width: 5rem;
+  height: 2.5rem;
+  position: relative;
+  top: 13.5rem;
+  left: 2.8rem;
+  cursor: pointer;
+}
+
+.intrerupatorOff {
+  width: 5rem;
+  height: 2.5rem;
+  position: relative;
+  top: 13.5rem;
+  left: 2.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* CONTAINER */
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url("img/brick.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 90vh;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.first-line,
+.second-line,
+.third-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-line-1,
+.first-line-2 {
+  width: 40rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.first-text1,
+.first-text2,
+.second-text,
+.third-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 7px black;
+  pointer-events: none;
+  /* -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black; */
+}
+
+.aboutme {
+  transition: all 1.5s ease-in-out;
+}
+.aboutme:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.skills {
+  transition: all 1.5s ease-in-out;
+}
+.skills:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.second-line-goals {
+  width: 60rem;
+  height: 25em;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.goals {
+  transition: all 1.5s ease-in-out;
+}
+.goals:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.third-line-contact {
+  width: 40rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact {
+  transition: all 1.5s ease-in-out;
+}
+.contact:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/*
+.h2-contact {
+  color: silver;
+  font-size: 5rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  background: linear-gradient(#ececec, #ab76ac);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}*/
+
+.about-section,
+.skills-section,
+.goals-section,
+.contact-section {
+  display: flex;
+  background-image: url("img/brick.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transition: transform 1s ease;
+  z-index: 100;
+}
+
+.about-text,
+.skills-text,
+.goals-text,
+.contact-text {
+  background-color: rgba(75, 40, 40, 0.4);
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 80vh;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  align-items: center;
+}
+
+/* X Symbol  */
+.burger,
+.burger2,
+.burger3,
+.burger4 {
+  cursor: pointer;
+  margin-top: 3rem;
+  margin-right: 10rem;
+  height: 10vh;
+}
+.line1,
+.line2 {
+  width: 6rem;
+  height: 0.4rem;
+  margin: 0.6rem;
+  background: white;
+  pointer-events: none;
+}
+
+.line1 {
+  transform: rotateZ(45deg) translateX(25%) translateY(100%);
+}
+.line2 {
+  transform: rotateZ(-45deg) translateY(100%);
+}
+
+.open {
+  transform: translateX(-100%);
+}
+
+/*FOOTER SECTION */
+footer {
+  font-family: "Titillium Web", sans-serif;
+  background: rgba(66, 31, 31, 0.8);
+  color: white;
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  z-index: -1;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 10rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+footer h4 {
+  flex: 3 1 50rem;
+  font-size: calc(1.4rem + 1vw);
+}

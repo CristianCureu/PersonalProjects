@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&family=Saira:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(#dedede, #fafafa, #dedede);
+}
+p {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+.header {
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.main-container {
+  min-height: 85vh;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#personal,
+#educatie-h2,
+#interese-h2 {
+  position: relative;
+  left: 25%;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  padding-bottom: 1.5rem;
+  padding-top: 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info,
+.info-2,
+.info-3,
+.info-interese,
+.info-interese2,
+.educatie-info1,
+.educatie-info2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  left: 35%;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+p {
+  padding: 0rem 6rem;
+  text-align: center;
+}
+
+#nume {
+  position: relative;
+  left: 10rem;
+}
+#adresa {
+  position: relative;
+  left: 9.3rem;
+}
+#mail {
+  position: relative;
+  left: 10rem;
+}
+#prioritati {
+  position: relative;
+  left: 5.8rem;
+}
+#hobby {
+  position: relative;
+  left: 8.9rem;
+}
+#liceu {
+  position: relative;
+  left: 11.3rem;
+}
+#facultate {
+  position: relative;
+  right: 0.7rem;
+}
+
+/*
+.info-2 {
+  position: relative;
+  left: 5rem;
+}
+.info-3 {
+  position: relative;
+  left: 2rem;
+}
+
+.info-interese {
+  position: relative;
+  left: 7rem;
+}
+
+.info-interese2 {
+  position: relative;
+  left: 11.3rem;
+}
+*/

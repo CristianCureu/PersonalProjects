@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+}
+button {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: slategrey;
+}
+
+button:hover {
+  background-color: lightslategray;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  margin: 2rem;
+}

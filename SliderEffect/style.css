@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 30vw;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  width: 30vw;
+  height: 80vh;
+}
+.img-container-before,
+.img-container-after {
+  position: absolute;
+  height: 80vh;
+  width: 30vw;
+}
+
+.img-container-after {
+  width: 15vw;
+  overflow: hidden;
+}
+
+.slider {
+  width: 0.5rem;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  height: 100%;
+  transform: translate(-50%, 0%);
+  pointer-events: none;
+}

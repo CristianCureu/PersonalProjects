@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.caption {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+th {
+  padding: 2rem;
+}
+
+th {
+  font-size: 2.2rem;
+}
+
+.titlu {
+  padding: 0rem 5rem;
+}
+
+.html-php {
+  font-size: 2rem;
+}
+
+.imagini {
+  width: 8rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+/*
+.html-cell,
+.php-cell {
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 20px;
+}
+*/

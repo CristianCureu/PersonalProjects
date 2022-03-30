@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/995db7e8fd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Random Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="generator">
+        <div class="slider">
+          <i class="far fa-sun"></i>
+          <i class="far fa-moon"></i>
+          <span class="slider-button"></span>
+        </div>
+
+        <h2 class="title">Random Generator</h2>
+        <p class="powered">powered by nCristian</p>
+        <form class="form-generator">
+          <input
+            class="input"
+            type="number"
+            id="min"
+            placeholder="Min"
+            min="0"
+          />
+          <input
+            class="input"
+            type="number"
+            id="max"
+            placeholder="Max"
+            max="1000000000"
+          />
+          <button class="gButton">Generate</button>
+        </form>
+        <div class="result">
+          <p class="resultH2">Result</p>
+          <br />
+
+          <p class="newResult">-</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
